@@ -1,0 +1,231 @@
+body {
+    font-family: arial,sans-serif;
+    font-size: 13px;
+}
+
+li a {
+    color: #1C1C1C;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+    padding-right: 25px;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.nav_links li a:hover{
+    text-decoration: underline;
+}
+
+.google-logo {
+    margin-top: 80px;
+}
+
+.search-box{
+    position: absolute;
+    margin-top: 3%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 25px;
+    width: 46%;
+    border-radius: 40px;
+    padding: 10px;
+    border: 1.5px solid #EBECEE;
+}
+
+.search-text {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding-left: 20px;
+    height: 90%;
+    width: 90%;
+    transition: 0.4s;   
+}
+
+.search-icon {
+    float: left;
+    padding-top: 5px;
+    height: 20px;
+}
+
+.voice-search-icon {
+    float: right;
+    margin-top: 1%;
+    height: 20px;
+    cursor: pointer;
+}
+
+.search-box:hover, textarea:focus, .button-gs:hover, .button-gs:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid #EBECEE;
+  }
+
+  .search-button {
+      margin-top: 90px;
+  }
+
+  .button-gs {
+      border: none;
+      padding: 10px 10px 10px;
+      border-radius: 3px;
+      cursor: pointer;
+  }
+
+  /* for ipad phone */
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px) {
+    .search-box {
+        position: absolute;
+        top: 28%;
+        left: 50%;
+        border: 1.5px solid #EBECEE;
+    }
+    
+    .voice-search-icon {
+        position: absolute;
+        margin-left: 40%;
+        cursor: pointer;
+    } 
+
+    .search-button {
+        margin-top: 140px;
+    }
+}
+
+/* for ipad pro */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and 
+(-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)   {
+    .search-box {
+        position: absolute;
+        top: 21%;
+        border: 1.5px solid #EBECEE;
+    }
+    
+    .voice-search-icon {
+        position: absolute;
+        cursor: pointer;
+    } 
+}
+
+/* for all android phone */
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+    .search-box {
+        position: absolute;
+        top: 41%;
+        border: 1.5px solid #EBECEE;
+        height: 10px;
+        width: 72%;
+    }
+
+    .search-icon {
+        float: left;
+        height: 20px;
+        margin-top: -7px;
+    }
+
+    .voice-search-icon {
+        position: absolute;
+        margin-left: 102px;
+        margin-top: -5px;
+        cursor: pointer;
+    } 
+
+    .google-logo.responsive {
+        width: 200px; 
+    }
+}
+
+/* for iphone6/7/8 model */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+    .search-box {
+        position: absolute;
+        top: 35%;
+        border: 1.5px solid #EBECEE;
+        height: 10px;
+        width: 75%;
+    }
+
+    .search-icon {
+        float: left;
+        height: 20px;
+        margin-top: -7px;
+    }
+
+    .voice-search-icon {
+        position: absolute;
+        margin-left: 133px;
+        margin-top: -5px;
+        cursor: pointer;
+    } 
+}
+
+/* for pixel2 mobiles */
+@media only screen and (min-device-width: 411px) and (max-device-width: 731px) {
+    .search-box {
+        position: absolute;
+        top: 35%;
+        border: 1.5px solid #EBECEE;
+        height: 10px;
+        width: 75%;
+    }
+
+    .search-icon {
+        float: left;
+        height: 20px;
+        margin-top: -7px;
+    }
+
+    .voice-search-icon {
+        position: absolute;
+        margin-left: 133px;
+        margin-top: -5px;
+        cursor: pointer;
+    } 
+}
+
+@media only screen and (min-device-width: 540px) and (max-device-width: 720px) {
+    .search-box {
+        position: absolute;
+        top: 35%;
+        border: 1.5px solid #EBECEE;
+        height: 10px;
+        width: 75%;
+    }
+
+    .search-icon {
+        float: left;
+        height: 20px;
+        margin-top: -7px;
+    }
+
+    .voice-search-icon {
+        position: absolute;
+        margin-left: 167px;
+        margin-top: -5px;
+        cursor: pointer;
+    } 
+
+    .google-logo.responsive {
+        width: 200px; 
+    }
+}
