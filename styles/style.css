@@ -133,7 +133,7 @@ header {
   and (max-device-width : 1024px) {
     .search-box {
         position: absolute;
-        top: 64%;
+        top: 26%;
         left: 50%;
         border: 1.5px solid #EBECEE;
     }
@@ -276,7 +276,7 @@ header {
 }
 
 /* for galaxy fold */
-@media only screen and (min-device-width: 280px) and (max-device-width: 653px) {
+/* @media only screen and (min-device-width: 280px) and (max-device-width: 653px) {
     .search-box {
         position: absolute;
         top: 35%;
@@ -309,4 +309,4 @@ header {
         display: none;
     }
 
-}
+} */
