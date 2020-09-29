@@ -11,7 +11,6 @@ li a {
 header {
     display: flex;
     justify-content: flex-end;
-    /* align-items: center; */
     padding-right: 25px;
 }
 
@@ -19,17 +18,17 @@ header {
     list-style: none;
 }
 
-.nav_links li {
+.nav_links li, .footer_nav_links li, .footer_right_nav_links li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.nav_links li {
+.nav_links li, .footer_nav_links li, .footer_right_nav_links li {
     display: inline-block;
     padding: 0px 5px;
 }
 
-.nav_links li a:hover{
+.nav_links li a:hover, .footer_nav_links li a:hover, .footer_right_nav_links li a:hover{
     text-decoration: underline;
 }
 
@@ -89,13 +88,52 @@ header {
       cursor: pointer;
   }
 
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #EBECEE;
+  }
+
+  .footer-text {
+    float: left;
+    margin-left: 25px;
+    color: #808080;
+    font-size: 13px;
+  }
+
+  .footer1 {
+    position: fixed;
+    left: 0;
+    margin-top: 14%;
+    border-bottom: 0.7px solid #BFBFBF;
+    width: 100%;
+    background-color: #EBECEE;
+    text-align: center;
+  }
+
+  .footer_nav_links {
+    float: left;
+    margin-left: -24px;
+    color: #808080;
+    font-size: 13px;
+  }
+
+  .footer_right_nav_links {
+    float: right;
+    /* margin-left: -24px; */
+    color: #808080;
+    font-size: 13px;
+  }
+
   /* for ipad phone */
   @media only screen
   and (min-device-width : 768px)
   and (max-device-width : 1024px) {
     .search-box {
         position: absolute;
-        top: 28%;
+        top: 64%;
         left: 50%;
         border: 1.5px solid #EBECEE;
     }
@@ -149,8 +187,15 @@ header {
         cursor: pointer;
     } 
 
-    .google-logo.responsive {
-        width: 200px; 
+    .footer_nav_links {
+        display: flex;
+        justify-content: center;
+        color: #808080;
+        font-size: 7px;
+      }
+    
+    .footer_right_nav_links {
+        display: none;
     }
 }
 
@@ -228,4 +273,40 @@ header {
     .google-logo.responsive {
         width: 200px; 
     }
+}
+
+/* for galaxy fold */
+@media only screen and (min-device-width: 280px) and (max-device-width: 653px) {
+    .search-box {
+        position: absolute;
+        top: 35%;
+        border: 1.5px solid #EBECEE;
+        height: 10px;
+        width: 75%;
+    }
+
+    .search-icon {
+        float: left;
+        height: 20px;
+        margin-top: -7px;
+    }
+
+    .voice-search-icon {
+        position: absolute;
+        margin-left: 80px;
+        margin-top: -5px;
+        cursor: pointer;
+    }
+     
+    .footer_nav_links {
+        display: flex;
+        justify-content: center;
+        color: #808080;
+        font-size: 7px;
+      }
+    
+    .footer_right_nav_links {
+        display: none;
+    }
+
 }
