@@ -147,6 +147,18 @@ header {
     .search-button {
         margin-top: 140px;
     }
+
+    .search-text {
+        margin-top: -22px;
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        height: 90%;
+        width: 90%;
+        padding-left: 24px;
+        /* transition: 0.4s;    */
+    }
 }
 
 /* for ipad pro */
@@ -162,6 +174,16 @@ header {
         position: absolute;
         cursor: pointer;
     } 
+    .search-text {
+        margin-top: 0px;
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        height: 90%;
+        width: 90%;
+        /* transition: 0.4s;    */
+    }
 }
 
 /* for all android phone */
@@ -178,6 +200,17 @@ header {
         float: left;
         height: 20px;
         margin-top: -7px;
+    }
+
+    .search-text {
+        margin-top: -17px;
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        height: 90%;
+        width: 90%;
+        /* transition: 0.4s;    */
     }
 
     .voice-search-icon {
@@ -270,8 +303,15 @@ header {
         cursor: pointer;
     } 
 
-    .google-logo.responsive {
-        width: 200px; 
+    .search-text {
+        margin-top: 0px;
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        height: 90%;
+        width: 90%;
+        /* transition: 0.4s;    */
     }
 }
 
