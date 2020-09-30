@@ -190,7 +190,7 @@ header {
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
     .search-box {
         position: absolute;
-        top: 41%;
+        top: 38%;
         border: 1.5px solid #EBECEE;
         height: 10px;
         width: 72%;
