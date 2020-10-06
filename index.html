@@ -1,57 +1,39 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Google</title>
-        <link rel="shortcut icon" href="images/googleIcon.png" />
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="styles/style.css" />
-        <!-- <script defer src= https://use.fontawesome.com/releases/v5.0.6/js/all.js> </script> -->
-    </head>
-    <body>
-        <div class="main-content">
-            <header>
-                <nav>
-                    <ul class="nav_links">
-                        <li><a href="#">Gmail</a></li>
-                        <li><a href="#">Images</a></li>
-                        <!-- <li style="margin-top:10px;"><img src="images/dots.jpg"></li> -->
-                    </ul>
-                </nav>
-            </header>
-            <center>
-                <div class="google-logo">
-                    <img src="images/googlelogo.png">
-                </div>
-                <div class="search-box">
-                    <img src="images/searchIcon.png" class="search-icon">
-                    <!-- <span id="voiceIconMain" class="tooltip"> -->
-                        <img src="images/image1.png" class="voice-search-icon"> 
-                        <!-- <span class="tooltiptext">Search by voice</span> -->
-                    <!-- </span> -->
-                               
-                    <input class="search-text" name="last" type="text">       
-                    
-                </div>
-                <div class="search-button">
-                    <input class="button-gs" type="button" value="Google Search">&nbsp;&nbsp;&nbsp;
-                    <input class="button-gs" type="button" value="I'm feeling lucky">
-                </div>
-                <div class="footer">
-                        <ul class="footer_nav_links">
-                            <li><a href="#">Advertising</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <li><a href="#">Business</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <li><a href="#">About</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <li><a href="#">How Search Works</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
-                        </ul>
-                        <ul class="footer_right_nav_links">
-                            <li><a href="#">Privacy</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <li><a href="#">Terms</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <li><a href="#">Settings</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
-                        </ul>
-                </div>
-            </center>
-            
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>JS Project</title>
+    <link rel="stylesheet" href="styles/JS_style.css" />
+</head>
+
+<body>
+    <div class="header">
+        <a href="#default" class="logo">This is my JS Page</a>
+        <div class="header-right">
+            <a href="#" class="active" id="myBtn">Click Me</a>
+            <a href="#" id="fetchapi-demo">Fetch API Ex</a>
+            <a href="#" id="es6-demo">ES6 Ex</a>
         </div>
-    </body>
+    </div>
+    <script>
+        //Dom manipulation - addeventlistener
+        document.getElementById("myBtn").addEventListener("click", myFunction);
+        function myFunction() {
+            window.location.href = "googlepage.html";
+        }
+        //using fetch api
+        document.getElementById('fetchapi-demo').addEventListener("click", getFetchAPIData);
+        function getFetchAPIData() {
+            window.location.href = "fetchAPI.html";
+        }
+        //ES6 JS
+        document.getElementById("es6-demo").addEventListener("click", esJSDemo);
+        function esJSDemo() {
+            window.location.href = "esJS.html";
+        }
+    </script>
+</body>
+
 </html>
